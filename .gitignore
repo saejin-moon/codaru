@@ -1,0 +1,13 @@
+logs
+ts/node_modules
+dist
+dist-ssr
+
+*.log
+*.local
+*.test
+*.out
+*.exe
+*.dll
+*.so
+*.dylib
