@@ -4,6 +4,7 @@
     "": {
       "name": "ts",
       "dependencies": {
+        "lucide-preact": "^0.552.0",
         "preact": "^10.27.2",
       },
       "devDependencies": {
@@ -357,6 +358,8 @@
     "lower-case": ["lower-case@2.0.2", "", { "dependencies": { "tslib": "^2.0.3" } }, "sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg=="],
 
     "lru-cache": ["lru-cache@5.1.1", "", { "dependencies": { "yallist": "^3.0.2" } }, "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w=="],
+
+    "lucide-preact": ["lucide-preact@0.552.0", "", { "peerDependencies": { "preact": "^10.5.13" } }, "sha512-r+r8yePtakKLRVQKYTI48lbjj9m2qxctVmLaJ/hcNi881aobs5amZ3OOdj3MJbotCKo8JzX17KTo2ZTiim1nEA=="],
 
     "magic-string": ["magic-string@0.30.19", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5" } }, "sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw=="],
 
