@@ -6,4 +6,16 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    --color-primary: #f0ebd8;
+    --color-secondary: #f78764;
+    --color-bg: #1c1f33;
+    --color-dark: #000f08;
+}
+/* #f0ebd8, #f78764, #000f08, #666370, #1c1f33 */
+
+@theme {
+    --color-brand: var(--color-primary);
+    --color-main-bg: var(--color-bg);
+    --color-accent: var(--color-secondary);
+    --color-dark: var(--color-dark);
 }

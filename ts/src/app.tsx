@@ -1,31 +1,17 @@
 import "@/assets/css/app.css";
-import { Logo } from "./assets/img/tsx/Logo";
-import { Slogan } from "./assets/img/tsx/Slogan";
-import { Rocket, Briefcase, Handshake, UserRoundPlus, Trophy, CircleUserRound, Store } from "lucide-preact";
+import { Navigation } from "@/components/Nav";
+import Slogan from "@/assets/img/svg/slogan.svg?react";
 
 export function App() {
     return (
-        <div>
-            <div className="w-full h-full flex items-center justify-between flex-col fixed top-0 left-0">
-                <nav class="w-full h-15 relative flex justify-around items-center">
-                    <Logo color="#000"/>
-                </nav>
-                <Slogan/>
-                <div class="w-full h-15 relative flex justify-center items-center">
-                    <nav class="w-90 h-full flex justify-between items-center text-black">
-                    <Rocket size={30} />
-                    <Briefcase size={30} />
-                    <Handshake size={30}  />
-                    <UserRoundPlus size={30} />
-                    <Trophy size={30} />
-                    <Store size={30} />
-                    </nav>
-                    <CircleUserRound size={30} class="absolute right-3 bottom-3"/>
-                </div>
+        <div class="bg-main-bg text-brand font-[LilGrotesk] font-bold">
+            <Navigation/>
+            <div class="w-full h-screen flex flex-col justify-center items-center overflow-y-hidden">
+                <Slogan width="40rem" class="fill-brand"/>
+                <span class="text-4xl z-2 mt-8 mb-10"><span class="text-accent">codaru</span> is a non-profit competitive coding league.</span>
+                <div class="bg-[#d76744] text-brand text-2xl p-2 px-8 cursor-pointer z-2 select-none rounded-sm -translate-x-2 font-black -rotate-2">join the league</div>
             </div>
-            <div className="w-full h-screen flex justify-center items-center">
-                {/* ... */}
-            </div>
+                {/* all sites should mostly not have to scroll. might put hosts on landing, not sure. for landing we should have a canvas with the slogan + doodles on the right side and then on the left side have the cta. */}
         </div>
     );
 }

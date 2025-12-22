@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "lucide-preact": "^0.552.0",
+    "motion": "^12.23.26",
     "preact": "^10.27.2"
   },
   "devDependencies": {
