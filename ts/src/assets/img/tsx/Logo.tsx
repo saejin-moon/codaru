@@ -1,3 +1,5 @@
+import type { Signalish } from "preact";
+
 {/* 
     after months of trying to decide on a logo
     i whipped this up in affinity in legit under ten minutes
@@ -5,14 +7,15 @@
     and that hand-drawn curvy "c".
     may find it ugly in the future but it will do for now.
 */}
-export const Logo = ({ color = "#000", size = "3rem" }) => (
+export const Logo = (str: Signalish<string|undefined>) => (
   <svg 
-      width={size}
+      width="100%"
+      className={ str }
       height="auto"
       viewBox="0 0 152 123" 
       version="1.1" 
       xmlns="http://www.w3.org/2000/svg"
-      style={{ fill: color, fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "round", strokeMiterlimit: 2 }}
+      style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "round", strokeMiterlimit: 2 }}
   >
       <g id="logo">
           <path fill="#f78764" d="M95.572,92.248c-0.341,-4.723 1.398,-10.149 7.06,-15.81c9.449,-9.449 17.289,-8.838 21.478,-6.962c3.659,1.638 7.08,5.585 8.463,11.434c3.859,-0.562 6.646,-0.875 7.343,-0.953c5.851,-0.65 11.129,3.572 11.779,9.423c0.628,5.653 -3.292,10.772 -8.836,11.698l0.094,0.067l1.646,2.196l1.188,3.153l0.171,3.249l-0.643,2.754l-1.18,2.279l-1.631,1.905c-0.767,0.717 -3.092,2.39 -8.063,4.047c-3.756,1.252 -7.72,0.295 -10.48,-2.165c-1.268,-0.076 -2.586,-0.172 -3.89,-0.292c-3.182,2.591 -6.719,4.035 -10.297,4.316c-3.615,0.285 -7.459,-0.506 -11.356,-3.104c-6.954,-4.636 -9.004,-9.723 -9.341,-13.594c-0.416,-4.765 1.443,-9.68 6.495,-13.642Z"/>

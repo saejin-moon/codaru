@@ -1,7 +1,17 @@
 @import "tailwindcss";
 
+body {
+    background: var(--color-bg);
+    font-weight: bold;
+    color: var(--color-primary);
+}
+.page {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
 :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: "LilGrotesk", system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
