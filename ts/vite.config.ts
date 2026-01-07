@@ -10,6 +10,7 @@ export default defineConfig({
       tailwindcss(), 
       svgr()
   ],
+  envDir: resolve(import.meta.dirname, ".."),
   resolve: {
     alias: {
       "@": resolve(import.meta.dirname, "./src")

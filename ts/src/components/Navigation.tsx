@@ -43,12 +43,12 @@ const icons = [
 
 export function Navigation() {
     return (
-        <div class="w-screen h-20 sticky bottom-0 flex justify-center items-center pb-5 gap-5 md:gap-40 text-brand/40 z-50">
+        <div class="w-screen h-20 sticky bottom-0 flex justify-center items-center gap-5 md:gap-40 text-brand/40 z-50">
             {icons.map(({ Icon, label }) => (
-                <div key={label} class="group relative flex flex-col items-center">
+                <a href={`/${label}`} key={label} class="group relative flex flex-col items-center">
                     <span class="absolute -top-10 px-2 py-1 rounded bg-none text-accent font-[LilGrotesk] font-bold text-lg opacity-0 translate-y-5 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-y-2 pointer-events-none whitespace-nowrap">{label}</span>
-                    <Icon size={40} class={label === "join" ? "text-accent/40 group-hover:text-accent/100 transition-all duration-300 cursor-pointer" : "text-brand/40 group-hover:text-brand/100 transition-all duration-300 cursor-pointer"}/>
-                </div>
+                    <Icon size={40} class={label === "join" ? "text-accent/40 group-hover:text-accent transition-all duration-300 cursor-pointer" : "text-brand/40 group-hover:text-brand transition-all duration-300 cursor-pointer"}/>
+                </a>
             ))}
             {/* add shadcn avatar for the future */}
         </div>

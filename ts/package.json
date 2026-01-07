@@ -9,11 +9,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@supabase/supabase-js": "^2.90.0",
     "@tailwindcss/vite": "^4.1.18",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "lucide-preact": "^0.552.0",
+    "lucide-react": "^0.562.0",
     "motion": "^12.23.26",
     "preact": "^10.28.1",
-    "preact-iso": "^2.11.1"
+    "preact-iso": "^2.11.1",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^4.3.5"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.2",

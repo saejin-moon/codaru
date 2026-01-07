@@ -1,0 +1,1 @@
+// initialize appwrite client

@@ -3,9 +3,8 @@ this is the codebase for codaru. <br>
 the following are in no particular order.
 ## saejin's todo
 - all things accounts
-    - pocketbase collection
-    - entry fields
-    - shadcn joining
+    - appwrite + shadcn
+        - bunx --bun shadcn@latest add button
     - holding token
     - processing token across the site for various levels of clearance
     - restricting access based on token level
@@ -14,8 +13,7 @@ the following are in no particular order.
     - pocketbase file uploads for pdf resumes
 - submissions
 - routes
-    - pocketbase stuff should be /pb/... and local only, not outward facing and only accessed via /api from the user so we can control
-    - and then normal routes should be /api/... and /... like normal
+    - whee .-. /api/... goes to golang by default
 ## dom's todo
 - wiki
 ## malav's todo

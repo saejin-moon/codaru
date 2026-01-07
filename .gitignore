@@ -11,3 +11,4 @@ dist-ssr
 *.dll
 *.so
 *.dylib
+*.env
