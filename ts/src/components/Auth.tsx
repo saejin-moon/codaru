@@ -1,10 +1,12 @@
-// import { Input } from "@/components/ui/input";
-// import { ArrowBigRight } from "lucide-react";
-// import { Turnstile } from "@marsidev/react-turnstile";
 import JoinHeader from "@/assets/img/svg/join.svg?react";
 import discord from "@/assets/img/svg/discord.svg";
 import github_mark from "@/assets/img/svg/github.svg";
-import { supabase } from "@/lib/supabase";
+// import { Input } from "@/components/ui/input";
+// import { ArrowBigRight } from "lucide-react";
+import { createClient } from "@supabase/supabase-js";
+// import { Turnstile } from "@marsidev/react-turnstile";
+
+const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY);
 
 export function AuthForm(){
     return (<div class="flex flex-col justify-center items-center">
