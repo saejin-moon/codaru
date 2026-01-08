@@ -9,7 +9,7 @@ interface AuthContextType {
   signOut: () => Promise<void>;
 }
 
-const AuthCtx = createContext<AuthContextType | undefined>(undefined);
+const AuthCtx = createContext<AuthContextType>(undefined!);
 
 export function AuthProvider({ children }: { children: preact.ComponentChildren }) {
     const [user, setUser] = useState<User | null>(null);

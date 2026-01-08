@@ -1,13 +1,13 @@
 // css
 import "@/assets/css/app.css";
 import { LocationProvider, Router } from "preact-iso";
-import Home from "./pages/Home";
-import Join from "./pages/Join";
-import { Header } from "./components/Header";
-import { AuthProvider } from "./context/auth.tsx";
+import Home from "@/pages/Home";
+import Join from "@/pages/Join";
+import { Header } from "@/components/Header";
+import { AuthProvider } from "@/context/auth";
 
 export function App() {
-    return (
+    return (   
         <AuthProvider>
             <LocationProvider>
                 <Header/>
@@ -19,5 +19,3 @@ export function App() {
         </AuthProvider>
     );
 }
-
-export default App;

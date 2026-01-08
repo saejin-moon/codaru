@@ -1,0 +1,120 @@
+- accounts
+    - settings
+    * nav profile icon
+    - nav profile menu
+    - delete account
+    - sign out
+    - oauth redirect back to join flow page (all required, redirect here if any aren't met)
+        - (a) username 
+        - (b) link discord
+        - (c) join discord server
+- member dashboard
+    - timeline
+    - points
+    - submissions
+    - squad
+    - team
+    - deadlines
+    - captain
+- submission page (everyone, squad leaders only for the project itself UNTIL the last six hours before the deadline)
+    - notes on individual squadmates
+    - automated warning on terminal submissions
+    - github submission
+        - link
+        - notes
+        - mechanics selected
+    - docker submission
+        - link
+        - notes
+        - mechanics selected
+- captain dashboard
+    - members
+    - % submitted
+- judge dashboard
+    - entries to judge
+    - deadlines
+- host dashboard
+    - overview of teams 
+        - % submitted by team
+        - num. of mems per team
+- scoring page
+    - rubric (each scored out of 7 unless otherwise indicated)
+        - creativity
+        - cleanliness (yes/no, half score if no)
+        - collaboration (for the whole squad)
+        - design (ui/ux, user-friendliness, graphic appeal)
+        - algorithm (complexity + application)
+- teams page
+    - shows each team, their captain, their squads, their squads' members, points scored, and points scored per squad, and points scored per member
+- leaderboard
+    - shows highest scoring squads, members, and teams
+* homepage button animation
+- mission
+    - motto
+    - manifesto
+    - research
+- about
+    - timeline
+    - team
+    - longer description
+- faq
+    - borrow qs from last yr
+    - add a few more based on vibes
+- sponsors
+    - tiers
+- combine
+- allow teams/squads to choose names but they must be approved
+- shop
+    - stripe registration
+    - kincustom merch designs
+        - bomber jackets
+        - men's joggers/women's track pants*
+        - cotton t-shirt
+        - aop t-shirt
+        - aop men's/women's hoodie
+        - sweatshirt*
+        - \* --> later
+    - SAMPLES
+    - merch tiers + discounts
+        - (a) merch for everyone
+        - (b) merch for participants only
+        - (c) merch for participants who completed all challenges only
+        - (d) merch for participants on a squad who scored over X number of points only
+        - (e) merch for the winning squad only
+- legal
+    - tos (yj)
+    - privacy (yj)
+    - rules (sj)
+- positions
+    - openings for hiring vols
+    - banner on homepage/dashboard
+    - allow submitting of pdfs only for resume.
+    - keep short, sweet, and simple. nothing generic.
+- socials
+    - youtube
+        - set up channel
+    - twitch
+        - set up channel
+    - discord
+        - create new server
+        - link server
+    - github
+        - link codaru gh account?
+- streams
+    - obs ninja test
+    - obs overlay
+    - lay out scoring
+        - 0–15 mins | originality | freshness of the core idea, clever spin on the prompt | 7 pts 
+        - 15–30 mins | theme | how seamlessly concept & early work reflect the challenge theme | 7 pts 
+        - 30–45 mins | dynamics | visible collaboration signals: git flow, role division, sync-ups | 7 pts 
+        - 45–60 mins | ambition | technical depth/imagination in structure & algorithms  | 7 pts 
+        - 60–75 mins | code qual | readability, modularity, styling, in-code documentation |  7 pts 
+        - 75–90 mins | core feature | robustness of the core feature | 7 pts 
+        - 90–105 mins | polish | ui/ux finesse, animations, responsiveness | 7 pts 
+        - 105–125 mins | risk | whether the team took on a technically ambitious or creatively bold feature in the last 30 mins, and how well it paid off | 7 pts
+    - commentators
+---
+
+notes:
+- ^ --> reqs go
+- ! --> reqs db
