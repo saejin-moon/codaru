@@ -1,6 +1,6 @@
 import * as Lucide from "lucide-preact";
 import { useAuth } from "@/context/auth";
-import { useState } from "preact/hooks";
+import { useState, useRef, useEffect } from "preact/hooks";
 import { Settings, LogOut } from "lucide-preact";
 // import { Option } from "@/lib/utils";
 
@@ -49,8 +49,18 @@ const icons = [
 
 export function Navigation() {
     const [menu, setMenu] = useState<Boolean>(false);
+    const menuRef = useRef<HTMLDivElement | null>(null);
     const { user, signOut } = useAuth();
-    console.log(user);
+    
+    useEffect(() => {
+        function click(e: MouseEvent){
+            if (menuRef.current && !menuRef.current.contains(e.target as Node)) setMenu(false);
+        }
+        
+        document.body.onmousedown = click;
+        return () => document.body.onmousedown = null;
+    }, [])
+    
     return (
         <div class="w-screen h-20 sticky bottom-0 flex justify-center items-center gap-5 md:gap-40 text-brand/40 z-50">
             {icons.map(({ Icon, label }) => {
@@ -63,7 +73,7 @@ export function Navigation() {
                 else {
                     if (user?.id) {
                         return (
-                            <div class="relative flex flex-col items-center justify-center">
+                            <div ref={menuRef} class="relative flex flex-col items-center justify-center">
                                 <div class={`
                                     absolute bottom-18 flex flex-col flex-nowrap gap-3 border-accent/20 border-3 p-3 rounded-sm group transition-all duration-300 hover:border-accent
                                     ${ menu ? "opacity-100 translate-y-0 scale-100"

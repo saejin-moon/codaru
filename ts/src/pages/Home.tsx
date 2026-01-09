@@ -5,15 +5,22 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ArrowBigRight } from "lucide-preact";
+import type { RoutableProps } from "preact-iso";
 import { useAuth } from "@/context/auth";
+import { useEffect } from "preact/hooks";
+import { api } from "@/lib/api";
 
-export function Home() {
+export function Home(_props: RoutableProps) {
     const { user } = useAuth();
+    
+    useEffect(() => {
+        if(user?.id) api.token.then(res => res.json()).then(data => console.log(data))
+    }, [])
+    
     return (
         <div>
             <Header />
             <div class="overflow-hidden h-screen">
-                {/* add animation to join button with ArrowBigRight */}
                 <div class="w-screen h-screen flex flex-col justify-center items-center gap-8">
                     <Slogan class="fill-brand w-4/5 md:w-200" />
                     <span class="text-center text-xl md:text-4xl z-2 w-3/4"><span class="text-accent">codaru</span> is a non-profit competitive coding league.</span>

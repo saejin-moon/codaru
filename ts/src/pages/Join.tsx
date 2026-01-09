@@ -1,9 +1,10 @@
 import { AuthForm } from "@/components/Auth";
 import { Navigation } from "@/components/Navigation";
+import type { RoutableProps } from "preact-iso";
 import { useLocation } from "preact-iso";
 import { useAuth } from "@/context/auth";
 
-export function Join(){
+export function Join(_props: RoutableProps){
     const { route } = useLocation();
     const { user } = useAuth();
     

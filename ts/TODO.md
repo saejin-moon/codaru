@@ -1,9 +1,9 @@
 - accounts
     - settings
     * nav profile icon
-    - nav profile menu
+    * nav profile menu
     - delete account
-    - sign out
+    * sign out
     - oauth redirect back to join flow page (all required, redirect here if any aren't met)
         - (a) username 
         - (b) link discord

@@ -7,8 +7,8 @@ import github_mark from "@/assets/img/svg/github.svg";
 import { supabase } from "@/lib/supabase";
 
 export function AuthForm(){
-    return (<div class="flex gap-40 justify-center items-center">
-        <JoinHeader class="fill-brand h-50"/>
+    return (<div class="flex flex-col md:flex-row gap-40 justify-center items-center">
+        <JoinHeader class="fill-brand h-35 md:h-50"/>
         <div class="justify-center items-center flex flex-col gap-4 px-2">
             
             {/*<span class="font-[LeagueSpartan] text-brand text-2xl font-bold">email</span>
